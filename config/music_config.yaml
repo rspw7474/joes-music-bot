@@ -6,4 +6,4 @@ ydl_options:
   noplaylist: true
 ffmpeg_options:
   before_options: "-nostdin -loglevel error -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5"
-  options: "-vn -ac 2 -ar 48000 -af aresample=async=1:first_pts=0,volume=0.4 -application audio -map_metadata -1 -threads 1"
+  options: "-vn -af aresample=async=1:first_pts=0,volume=0.4 -application audio -map_metadata -1 -threads 1"
