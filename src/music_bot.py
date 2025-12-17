@@ -172,7 +172,7 @@ class MusicBot(commands.Bot):
             return music_player
 
     async def delete_music_player(self, guild_id: int) -> None:
-        music_player = self.music_players.pop(member.guild.id, None)
+        music_player = self.music_players.pop(guild_id, None)
         if music_player:
             await music_player.shutdown()
 
