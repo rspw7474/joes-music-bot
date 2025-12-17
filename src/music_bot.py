@@ -332,7 +332,7 @@ class MusicBot(commands.Bot):
             await interaction.followup.send(message)
             return
 
-        await self.remove_music_player(interaction.guild.id)
+        await self.delete_music_player(interaction.guild.id)
 
         voice_client = self.get_voice_client(interaction.guild)
         if voice_client and voice_client.is_connected():
