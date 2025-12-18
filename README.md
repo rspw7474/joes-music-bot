@@ -24,7 +24,7 @@ To configure integrations:
 Show all commands.
 
 #### `/play` `<url>`
-Play music given a YouTube URL.
+Play track given a YouTube URL.
 
 #### `/pause`
 Pause the current track.

@@ -50,7 +50,7 @@ class MusicBot(commands.Bot):
     def add_commands(self) -> None:
         self.tree.add_command(app_commands.Command(
             name="play",
-            description="Play music given a YouTube URL.",
+            description="Play track given a YouTube URL.",
             callback=self.play_command
         ))
         self.tree.add_command(app_commands.Command(
