@@ -5,5 +5,5 @@ ydl_options:
   no_warnings: true
   noplaylist: true
 ffmpeg_options:
-  before_options: "-nostdin -loglevel error -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5"
+  before_options: "-nostdin -loglevel error -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -max_delay 500000"
   options: "-vn -map_metadata -1 -threads 1"
